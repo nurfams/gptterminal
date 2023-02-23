@@ -8,7 +8,7 @@ chatbot = Chatbot(config={
 while True:
 
     print("")
-    print("##########################################################################")
+    print("############################# Pertanyaan ###################################")
     print("")
     print("Jika mau keluar ketikkan exit")
     prev_text = ""
