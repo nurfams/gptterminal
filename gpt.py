@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from revChatGPT.V1 import Chatbot
 
 chatbot = Chatbot(config={
@@ -5,24 +6,16 @@ chatbot = Chatbot(config={
 })
 
 while True:
-    # print("##########################################################################")
-    # print("Jika mau keluar ketikkan exit")
-    # prompt = input("Masukkan Pertanyaan : ")
-    # print("############################# Jawaban ####################################")
-    # response = ""
 
-    # for data in chatbot.ask(
-    # prompt
-    # ):
-    #     response = data["message"]
-
-    # print(response)
-
+    print("")
     print("##########################################################################")
+    print("")
     print("Jika mau keluar ketikkan exit")
     prev_text = ""
     text = (input("Masukkan pertanyaan : "))
+    print("")
     print("############################# Jawaban ####################################")
+    print("")
     for data in chatbot.ask(
         text,
     ):
@@ -33,4 +26,5 @@ while True:
 
     if text == "exit":
         print("pertanyaan dihentikan")
+        clear_conversations()
         break
