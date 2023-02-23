@@ -26,5 +26,4 @@ while True:
 
     if text == "exit":
         print("pertanyaan dihentikan")
-        clear_conversations()
         break
