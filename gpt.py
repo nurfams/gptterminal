@@ -8,14 +8,15 @@ chatbot = Chatbot(config={
 while True:
 
     print("")
-    print("############################# Pertanyaan ###################################")
+    print("############################ Pertanyaan ###################################")
     print("")
-    print("Jika mau keluar ketikkan exit")
+    print("Jika mau keluar ketikkan exit / stop / berhenti")
     prev_text = ""
     text = (input("Masukkan pertanyaan : "))
     print("")
     print("############################# Jawaban ####################################")
     print("")
+
     for data in chatbot.ask(
         text,
     ):
@@ -24,6 +25,7 @@ while True:
         prev_text = data["message"]
     print()
 
-    if text == "exit":
+    if text in ["exit", "stop", "berhenti", ""]:
         print("pertanyaan dihentikan")
         break
+        clear_conversations()
