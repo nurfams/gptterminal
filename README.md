@@ -13,5 +13,5 @@ pip3 install revChatGPT
 git clone https://github.com/nurfams/gptterminal.git
 
 # jalankan di dalam folder 
-di termux : python gpt.py
+di termux : python gpt.py <br>
 di cmd    : gpt.py
