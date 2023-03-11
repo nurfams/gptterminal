@@ -19,8 +19,14 @@ git clone https://github.com/nurfams/gptterminal.git
 } <br>
 <br>
 Kalau mau menggunakan token klik link ini : <br>
-https://chat.openai.com/api/auth/session
+https://chat.openai.com/api/auth/session <br>
+<br>
+Ubah yang email dan password diatas Menjadi :
+<br>
+{ <br>
+ "access_token": "<access_token>" <br>
+} <br>
 
-# jalankan di dalam folder 
+# jalankan di dalam folder atau  
 di termux : python gpt.py <br>
 di cmd    : gpt.py
