@@ -7,7 +7,7 @@ implementasi openai chat gpt ke windows terminal, linux, termux
 https://www.python.org/ftp/python/3.11.2/python-3.11.2-amd64.exe
 
 # Installasi
-pip3 install revChatGPT
+pip3 install --upgrade revChatGPT
 
 # lalu clone repo ini terlebih dahulu
 git clone https://github.com/nurfams/gptterminal.git
